@@ -1,16 +1,19 @@
 
 .close {
   position: absolute;
-  right: 32px;
+  right: 20px;
   top: 32px;
   width: 32px;
   height: 32px;
   opacity: 0.3;
+  margin-top: 230px
 }
-.close:hover {
+
+ .close:hover {
   opacity: 1;
 }
-.close:before, .close:after {
+
+ .close:before, .close:after {
   position: absolute;
   left: 15px;
   content: ' ';
@@ -18,10 +21,21 @@
   width: 2px;
   background-color: #333;
 }
+
 .close:before {
   transform: rotate(45deg);
 }
+
 .close:after {
   transform: rotate(-45deg);
 }
 
+.textarea {
+  width: 240px;
+  height: 70px;
+}
+
+a {
+	position: relative;
+  margin-left: 693px;
+}
