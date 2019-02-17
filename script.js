@@ -1,6 +1,6 @@
 $(function(){
 
-$("#textarea-quastions").hide();
+	$("#textarea-quastions").hide();
 
 	$( ".close" ).click(function() {
 	 	$("fieldset").hide( "slow" );
