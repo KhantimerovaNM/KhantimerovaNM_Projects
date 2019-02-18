@@ -1,0 +1,81 @@
+﻿<!--<h2>Welcome to ASP.NET MVC @ViewData["Version"] on @ViewData["Runtime"]!</h2> -->
+
+<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <h1>Редактирование формы</h1>
+    <link rel="stylesheet" href="Content/style.css">
+    <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/script.js"></script>
+  </head>
+
+<body>
+
+<div class="form-group">
+ 
+  <input id="text-main" name="text" type="text" placeholder="Заголовок формы" class="form-control input-md" required="">
+</div>
+
+<p></p>
+
+<div class="form-group">
+                     
+    <textarea class="textarea" id="textarea-main" name="textarea" placeholder="Описание формы" class="form-control input-md" required=""></textarea>
+</div>
+
+
+<p></p>
+
+<h4>Поля формы:</h4>
+<form class="form-horizontal">
+<fieldset>
+
+
+<div class="form-group">
+ 
+
+  <input id="text-local" name="text" type="text" placeholder="Заголовок поля" class="form-control input-md" required="">
+    <select class="form-control" name="selectTypeForm" id="selectTypeForm">
+        <option disabled="null" selected="null">Тип поля</option>
+        <option class="value-placeholder" value="option-1" id="selectTypeForm-0">Текст-строка</option>
+        <option class="value-placeholder" value="option-2" id="selectTypeForm-1">Текст-абзац</option>
+        <option class="value-textarea" value="option-3" id="selectTypeForm-2">Один из списка</option>
+        <option class="value-textarea" value="option-4" id="selectTypeForm-3">Несколько из списка</option>
+        <option class="value-textarea" value="option-5" id="selectTypeForm-4">Раскрывающийся список</option>
+    </select>
+  <p class="close"></p>
+
+</div>
+
+<p></p>
+<!-- Textarea -->
+<div class="form-group">
+                       
+    <textarea class="textarea" id="textarea-quastions" name="textarea">
+        Вопрос1
+        Вопрос2
+        Вопрос3
+    </textarea>
+  
+  <input id="text-placeholder" name="text" type="text" value="Placeholder" class="form-control input-md" required="">
+
+</div>
+
+ <p><input type="checkbox" checked="">Обязательный вопрос<br></p>
+
+
+</fieldset>
+
+<p><a href="">+ Добавить поле</a></p>
+<div class="buttons">
+<button type="button" name="buttonClose" id="buttonClose">Закрыть</button>
+<button type="button" name="buttonSave" id="buttonSave">Сохранить</button>
+</div>
+</form>
+
+
+</body>
+</html>
+
+
